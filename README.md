@@ -2,16 +2,17 @@
 Lancer l'appli : 
 Crée un fichier .env à la racine (copie le modèle ci-dessous) pour que Docker sache quels mots de passe utiliser.
 
-Extrait de code
+```bash
 MYSQL_DATABASE=app_db
 MYSQL_USER=user_admin
 MYSQL_PASSWORD=user_pass
 MYSQL_ROOT_PASSWORD=root_password
-
+```
 Ouvre ton terminal dans le dossier du projet et tape :
 
-Bash
+```Bash
 docker-compose up -d --build
+```
 Une fois fini, rendez-vous sur http://localhost:8080. Si tu vois "Connexion réussie", le réseau interne communique.
 
 Architecture :
