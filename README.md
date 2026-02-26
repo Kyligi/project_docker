@@ -35,12 +35,14 @@ Pour prouver que PHP et MySQL se parlent, clique sur le bouton "Ajouter une donn
 
 2. Tester la persistance
 Ajoute quelques messages sur le site.
-Coupe tout avec : docker-compose down.
-Relance avec : docker-compose up -d.
+Coupe tout avec : ```docker-compose down```.
+Relance avec : ```docker-compose up -d```.
 Rafraîchis la page.
 
 Organisation des fichiers
+```bash
 docker-compose.yml : Dirige tout.
 /nginx & /php : Les Dockerfiles et la configuration serveur.
 /src : Code source PHP.
 /sql : Script qui crée automatiquement la table messages au premier lancement.
+```
