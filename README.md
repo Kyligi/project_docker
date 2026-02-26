@@ -17,9 +17,9 @@ Une fois fini, rendez-vous sur http://localhost:8080. Si tu vois "Connexion réu
 
 Architecture :
 Services
-(Nginx): Serveur web.
-(PHP-FPM): Traite la logique et parle à la bdd. Il ne répond qu'à Nginx.
-(MySQL): Stocke nos données.
+1. (Nginx): Serveur web.
+2. (PHP-FPM): Traite la logique et parle à la bdd. Il ne répond qu'à Nginx.
+3. (MySQL): Stocke nos données.
 
 Réseaux & Sécurité
 Double réseau pour plus de sécurité :
