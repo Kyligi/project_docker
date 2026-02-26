@@ -21,13 +21,12 @@ Services
 2. (PHP-FPM): Traite la logique et parle à la bdd. Il ne répond qu'à Nginx.
 3. (MySQL): Stocke nos données.
 
-Réseaux & Sécurité
-Double réseau pour plus de sécurité :
-(Frontend): Pour la discussion entre Nginx et PHP.
-(Backend): Un tunnel privé entre PHP et MySQL pour éviter des intrusions.
+Réseaux & Sécurité (Double réseau pour plus de sécurité) :
+1. (Frontend): Pour la discussion entre Nginx et PHP.
+2. (Backend): Un tunnel privé entre PHP et MySQL pour éviter des intrusions.
 
 Volumes & Persistance
-(db_data): est notre volume, les données persistent après des redémarrages.
+1. (db_data): est notre volume, les données persistent après des redémarrages.
 
 Guide de test :
 1. Tester la communication
