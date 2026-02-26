@@ -1,4 +1,4 @@
-# project_docker
+# Project_docker
 Lancer l'appli : 
 Crée un fichier .env à la racine (copie le modèle ci-dessous) pour que Docker sache quels mots de passe utiliser.
 
