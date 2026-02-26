@@ -1,8 +1,8 @@
 <?php
 $host = 'db';
-$db   = 'app_db';
-$user = 'user_admin';
-$pass = 'user_pass';
+$db   = getenv('MYSQL_DATABASE');
+$user = getenv('MYSQL_USER');
+$pass = getenv('MYSQL_PASSWORD');
 
 $connexionStatus = "";
 $messages = [];
@@ -20,7 +20,7 @@ try {
     $messages = $query->fetchAll(PDO::FETCH_ASSOC);
 
 } catch (PDOException $e) {
-    $connexionStatus = "❌ Erreur : " . $e->getMessage();
+    $connexionStatus = "Erreur : " . $e->getMessage();
 }
 ?>
 
@@ -50,7 +50,7 @@ try {
         <button type="submit" name="ajouter">Ajouter une donnée en DB</button>
     </form>
 
-    <h3>Données stockées (Persistance) :</h3>
+    <h3>Données :</h3>
     <?php if (empty($messages)): ?>
         <p>Aucune donnée. Cliquez sur le bouton !</p>
     <?php else: ?>
